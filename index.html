@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crimson Charm – Beauty that speaks in crimson tones.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #fff5f5;
+      color: #4a0000;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #ffd6d6;
+    }
+
+    /* BANNER */
+    #banner {
+      background-image: url('1000045952.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      padding: 120px 20px;
+      position: relative;
+    }
+
+    #banner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(179, 0, 0, 0.4);
+    }
+
+    #banner h1 {
+      font-size: 52px;
+      position: relative;
+      z-index: 1;
+      letter-spacing: 2px;
+    }
+
+    #banner p {
+      font-size: 20px;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* CONTENT SECTIONS */
+    section {
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 1px solid #e8bcbc;
+    }
+
+    section img {
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(179, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: #b30000;
+      margin-top: 30px;
+      font-size: 28px;
+    }
+
+    p.desc {
+      width: 80%;
+      max-width: 600px;
+      margin: 15px auto;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #5a1a1a;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #b30000;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #ff1a1a;
+      transform: scale(1.05);
+    }
+
+    /* CONTACT FORM */
+    #contact {
+      background-color: #ffe6e6;
+      padding: 60px 20px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #800000;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #b30000;
+      border-radius: 8px;
+      font-family: "Georgia", serif;
+    }
+
+    form button {
+      background-color: #b30000;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: #ff1a1a;
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      background-color: #b30000;
+      color: white;
+      padding: 30px 10px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffd6d6;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      #banner h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="logo.jpg" alt="Crimson Charm Logo">
+    <nav>
+      <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section id="banner">
+    <h1>Crimson Charm</h1>
+    <p>Beauty that speaks in crimson tones.</p>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="products">
+    <section>
+      <img src="nail.jpg" alt="Red Bow Nail Art"/>
+      <h2>Red Bow Nail Art Design</h2>
+      <p class="desc">Elegant burgundy and nude nail polish with red bow accents — perfect for a classy, romantic look.</p>
+      <a href="sms:09352156281" class="button">Order via SMS</a>
+    </section>
+
+    <section>
+      <img src="pink.jpg" alt="Floral Pink Perfume">
+      <h2>Floral Pink Perfume</h2>
+      <p class="desc">A feminine fragrance in a rose-tinted crystal bottle that embodies softness, beauty, and sophistication.</p>
+      <a href="sms:09352156281" class="button">Order via SMS</a>
+    </section>
+
+    <section>
+      <img src="okdy.jpg" alt="OKADY Yeast Skincare Set">
+      <h2>OKADY Yeast Brightening Skincare Set</h2>
+      <p class="desc">Complete skincare kit with cleanser, essence, cream, and eye cream designed to brighten and hydrate your skin.</p>
+      <a href="sms:09352156281" class="button">Order via SMS</a>
+    </section>
+
+    <section>
+      <img src="./liquid.jpg" alt="Liquid Foundation Shades">
+      <h2>Liquid Foundation Shades Collection</h2>
+      <p class="desc">A range of lightweight, blendable foundations in multiple tones for a flawless, natural finish.</p>
+      <a href="sms:09352156281" class="button">Order via SMS</a>
+    </section>
+
+    <section>
+      <img src="logo.jpg" alt="Classic Red Lipstick">
+      <h2>Classic Red Lipstick</h2>
+      <p class="desc">A bold red lipstick with a creamy texture and high shine — perfect for a confident, timeless look.</p>
+      <a href="sms:09352156281" class="button">Order via SMS</a>
+    </section>
+  </main>
+
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Crimson Charm | For orders & inquiries, text us at <strong>09352156281</strong></p>
+    <p>
+      <a href="#banner">Back to Top</a>
+    </p>
+  </footer>
+
+</body>
+</html>
